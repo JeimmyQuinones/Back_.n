@@ -6,76 +6,77 @@ using System.Threading.Tasks;
 using Entidad;
 namespace Datos
 {
-    public class UsuarioData
+    public class ProcesoData
     {
-        public List<Usuario> GetUsuarios()
+        public List<Proceso> GetProcesos()
         {
             PruebaJeimmy_QuiñonesEntities db = new PruebaJeimmy_QuiñonesEntities();
-            return db.Usuarios.ToList();
+            return db.Procesoes.ToList();
         }
-        public Usuario GetUsuario(int id)
+        public Proceso GetProceso(int id)
         {
             PruebaJeimmy_QuiñonesEntities db = new PruebaJeimmy_QuiñonesEntities();
-            return db.Usuarios.FirstOrDefault(x=>x.IdUsuario==id);
+            return db.Procesoes.FirstOrDefault(x => x.IdProceso == id);
         }
-        public string AddUsuario(Usuario user)
+        public string AddProceso(Proceso model)
         {
             PruebaJeimmy_QuiñonesEntities db = new PruebaJeimmy_QuiñonesEntities();
             try
             {
-                db.Usuarios.Add(user);
+                db.Procesoes.Add(model);
                 db.SaveChanges();
                 return "OK";
             }
             catch (Exception e)
             {
-                return "Error al agregar el usuario";
+                return "Error al agregar el Proceso";
             }
-            
+
         }
-        public string SaveUsuario(Usuario user)
+        public string SaveProceso(Proceso proces)
         {
             PruebaJeimmy_QuiñonesEntities db = new PruebaJeimmy_QuiñonesEntities();
-            var model = db.Usuarios.FirstOrDefault(x => x.IdUsuario == user.IdUsuario);
-            if(model!=null)
+            var model = db.Procesoes.FirstOrDefault(x => x.IdUsuario == proces.IdUsuario);
+            if (model != null)
             {
                 try
                 {
-                    model.Nombre = user.Nombre;
-                    model.Email = user.Email;
+                    model.IdUsuario = proces.IdUsuario;
+                    model.Nombre = proces.Nombre;
+                    model.Procesopadre = proces.Procesopadre;
                     db.SaveChanges();
                     return "OK";
                 }
-                catch(Exception e)
+                catch (Exception e)
                 {
                     return "Error al guardar los cambios";
                 }
             }
             else
             {
-                return "Usuario no encontrado";
+                return "Proceso no encontrado";
             }
         }
-        public string DeleteUsuario(int id)
+        public string DeleteProceso(int id)
         {
             PruebaJeimmy_QuiñonesEntities db = new PruebaJeimmy_QuiñonesEntities();
-            var model = db.Usuarios.FirstOrDefault(x => x.IdUsuario == id);
+            var model = db.Procesoes.FirstOrDefault(x => x.IdProceso == id);
             if (model != null)
             {
                 try
                 {
-                    db.Usuarios.Remove(model);
+                    db.Procesoes.Remove(model);
                     db.SaveChanges();
                     return "OK";
                 }
                 catch (Exception e)
                 {
-                    return "Error al eliminar el usuario";
+                    return "Error al eliminar el Proceso";
                 }
             }
             else
             {
-                return "Usuario no encontrado";
+                return "Proceso no encontrado";
             }
 
 

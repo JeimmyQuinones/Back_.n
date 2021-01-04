@@ -63,6 +63,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ModelDatos.edmx</DependentUpon>
     </Compile>
+    <Compile Include="ProcesoData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UsuarioData.cs" />
   </ItemGroup>
