@@ -1,0 +1,14 @@
+C:\Users\Jeimmy\Desktop\PruebaTecnica_Jeimmy_Quiñones\Jeimmy_Quinones\Negocio\bin\Debug\Negocio.dll
+C:\Users\Jeimmy\Desktop\PruebaTecnica_Jeimmy_Quiñones\Jeimmy_Quinones\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Jeimmy\Desktop\PruebaTecnica_Jeimmy_Quiñones\Jeimmy_Quinones\Negocio\bin\Debug\Datos.dll
+C:\Users\Jeimmy\Desktop\PruebaTecnica_Jeimmy_Quiñones\Jeimmy_Quinones\Negocio\bin\Debug\Entidad.dll
+C:\Users\Jeimmy\Desktop\PruebaTecnica_Jeimmy_Quiñones\Jeimmy_Quinones\Negocio\bin\Debug\EntityFramework.dll
+C:\Users\Jeimmy\Desktop\PruebaTecnica_Jeimmy_Quiñones\Jeimmy_Quinones\Negocio\bin\Debug\Datos.pdb
+C:\Users\Jeimmy\Desktop\PruebaTecnica_Jeimmy_Quiñones\Jeimmy_Quinones\Negocio\bin\Debug\Datos.dll.config
+C:\Users\Jeimmy\Desktop\PruebaTecnica_Jeimmy_Quiñones\Jeimmy_Quinones\Negocio\bin\Debug\Entidad.pdb
+C:\Users\Jeimmy\Desktop\PruebaTecnica_Jeimmy_Quiñones\Jeimmy_Quinones\Negocio\bin\Debug\EntityFramework.xml
+C:\Users\Jeimmy\Desktop\PruebaTecnica_Jeimmy_Quiñones\Jeimmy_Quinones\Negocio\obj\Debug\Negocio.csprojAssemblyReference.cache
+C:\Users\Jeimmy\Desktop\PruebaTecnica_Jeimmy_Quiñones\Jeimmy_Quinones\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\Jeimmy\Desktop\PruebaTecnica_Jeimmy_Quiñones\Jeimmy_Quinones\Negocio\obj\Debug\Negocio.csproj.CopyComplete
+C:\Users\Jeimmy\Desktop\PruebaTecnica_Jeimmy_Quiñones\Jeimmy_Quinones\Negocio\obj\Debug\Negocio.dll
+C:\Users\Jeimmy\Desktop\PruebaTecnica_Jeimmy_Quiñones\Jeimmy_Quinones\Negocio\obj\Debug\Negocio.pdb

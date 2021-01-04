@@ -1,0 +1,6 @@
+C:\Users\Jeimmy\Desktop\PruebaTecnica_Jeimmy_Quiñones\Jeimmy_Quinones\Entidad\bin\Debug\Entidad.dll
+C:\Users\Jeimmy\Desktop\PruebaTecnica_Jeimmy_Quiñones\Jeimmy_Quinones\Entidad\bin\Debug\Entidad.pdb
+C:\Users\Jeimmy\Desktop\PruebaTecnica_Jeimmy_Quiñones\Jeimmy_Quinones\Entidad\obj\Debug\Entidad.csprojAssemblyReference.cache
+C:\Users\Jeimmy\Desktop\PruebaTecnica_Jeimmy_Quiñones\Jeimmy_Quinones\Entidad\obj\Debug\Entidad.csproj.CoreCompileInputs.cache
+C:\Users\Jeimmy\Desktop\PruebaTecnica_Jeimmy_Quiñones\Jeimmy_Quinones\Entidad\obj\Debug\Entidad.dll
+C:\Users\Jeimmy\Desktop\PruebaTecnica_Jeimmy_Quiñones\Jeimmy_Quinones\Entidad\obj\Debug\Entidad.pdb

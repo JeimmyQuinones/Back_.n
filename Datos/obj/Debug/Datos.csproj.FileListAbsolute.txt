@@ -1,0 +1,14 @@
+C:\Users\Jeimmy\Desktop\PruebaTecnica_Jeimmy_Quiñones\Jeimmy_Quinones\Datos\bin\Debug\Datos.dll.config
+C:\Users\Jeimmy\Desktop\PruebaTecnica_Jeimmy_Quiñones\Jeimmy_Quinones\Datos\bin\Debug\Datos.dll
+C:\Users\Jeimmy\Desktop\PruebaTecnica_Jeimmy_Quiñones\Jeimmy_Quinones\Datos\bin\Debug\Datos.pdb
+C:\Users\Jeimmy\Desktop\PruebaTecnica_Jeimmy_Quiñones\Jeimmy_Quinones\Datos\bin\Debug\Entidad.dll
+C:\Users\Jeimmy\Desktop\PruebaTecnica_Jeimmy_Quiñones\Jeimmy_Quinones\Datos\bin\Debug\EntityFramework.dll
+C:\Users\Jeimmy\Desktop\PruebaTecnica_Jeimmy_Quiñones\Jeimmy_Quinones\Datos\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Jeimmy\Desktop\PruebaTecnica_Jeimmy_Quiñones\Jeimmy_Quinones\Datos\bin\Debug\Entidad.pdb
+C:\Users\Jeimmy\Desktop\PruebaTecnica_Jeimmy_Quiñones\Jeimmy_Quinones\Datos\bin\Debug\EntityFramework.xml
+C:\Users\Jeimmy\Desktop\PruebaTecnica_Jeimmy_Quiñones\Jeimmy_Quinones\Datos\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Jeimmy\Desktop\PruebaTecnica_Jeimmy_Quiñones\Jeimmy_Quinones\Datos\obj\Debug\Datos.csprojAssemblyReference.cache
+C:\Users\Jeimmy\Desktop\PruebaTecnica_Jeimmy_Quiñones\Jeimmy_Quinones\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\Jeimmy\Desktop\PruebaTecnica_Jeimmy_Quiñones\Jeimmy_Quinones\Datos\obj\Debug\Datos.csproj.CopyComplete
+C:\Users\Jeimmy\Desktop\PruebaTecnica_Jeimmy_Quiñones\Jeimmy_Quinones\Datos\obj\Debug\Datos.dll
+C:\Users\Jeimmy\Desktop\PruebaTecnica_Jeimmy_Quiñones\Jeimmy_Quinones\Datos\obj\Debug\Datos.pdb

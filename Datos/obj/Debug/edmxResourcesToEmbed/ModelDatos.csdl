@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PruebaJeimmy_QuiñonesModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Proceso">
+    <Key>
+      <PropertyRef Name="IdProceso" />
+    </Key>
+    <Property Name="IdProceso" Type="Int32" Nullable="false" />
+    <Property Name="IdUsuario" Type="Int32" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Procesopadre" Type="Int32" />
+    <NavigationProperty Name="Proceso1" Relationship="Self.FK_Proceso_Proceso" FromRole="Proceso" ToRole="Proceso1" />
+    <NavigationProperty Name="Proceso2" Relationship="Self.FK_Proceso_Proceso" FromRole="Proceso1" ToRole="Proceso" />
+    <NavigationProperty Name="Usuario" Relationship="Self.FK_Proceso_Usuario" FromRole="Proceso" ToRole="Usuario" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="IdUsuario" />
+    </Key>
+    <Property Name="IdUsuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Apellidos" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Numeroidentificacion" Type="Int32" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Procesoes" Relationship="Self.FK_Proceso_Usuario" FromRole="Usuario" ToRole="Proceso" />
+  </EntityType>
+  <Association Name="FK_Proceso_Proceso">
+    <End Role="Proceso" Type="Self.Proceso" Multiplicity="0..1" />
+    <End Role="Proceso1" Type="Self.Proceso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Proceso">
+        <PropertyRef Name="IdProceso" />
+      </Principal>
+      <Dependent Role="Proceso1">
+        <PropertyRef Name="Procesopadre" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Proceso_Usuario">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
+    <End Role="Proceso" Type="Self.Proceso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="IdUsuario" />
+      </Principal>
+      <Dependent Role="Proceso">
+        <PropertyRef Name="IdUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="PruebaJeimmy_QuiñonesEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Procesoes" EntityType="Self.Proceso" />
+    <EntitySet Name="Usuarios" EntityType="Self.Usuario" />
+    <AssociationSet Name="FK_Proceso_Proceso" Association="Self.FK_Proceso_Proceso">
+      <End Role="Proceso" EntitySet="Procesoes" />
+      <End Role="Proceso1" EntitySet="Procesoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Proceso_Usuario" Association="Self.FK_Proceso_Usuario">
+      <End Role="Usuario" EntitySet="Usuarios" />
+      <End Role="Proceso" EntitySet="Procesoes" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
