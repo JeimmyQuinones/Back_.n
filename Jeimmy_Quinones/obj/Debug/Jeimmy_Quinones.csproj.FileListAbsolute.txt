@@ -104,3 +104,5 @@ C:\Users\Jeimmy\Desktop\PruebaTecnica_Jeimmy_Quiñones\Jeimmy_Quinones\Jeimmy_Qu
 C:\Users\Jeimmy\Desktop\PruebaTecnica_Jeimmy_Quiñones\Jeimmy_Quinones\Jeimmy_Quinones\obj\Debug\Jeimmy_Quinones.csproj.CopyComplete
 C:\Users\Jeimmy\Desktop\PruebaTecnica_Jeimmy_Quiñones\Jeimmy_Quinones\Jeimmy_Quinones\obj\Debug\Jeimmy_Quinones.dll
 C:\Users\Jeimmy\Desktop\PruebaTecnica_Jeimmy_Quiñones\Jeimmy_Quinones\Jeimmy_Quinones\obj\Debug\Jeimmy_Quinones.pdb
+C:\Users\Jeimmy\Desktop\PruebaTecnica_Jeimmy_Quiñones\Jeimmy_Quinones\Jeimmy_Quinones\bin\AutoMapper.dll
+C:\Users\Jeimmy\Desktop\PruebaTecnica_Jeimmy_Quiñones\Jeimmy_Quinones\Jeimmy_Quinones\bin\AutoMapper.xml
