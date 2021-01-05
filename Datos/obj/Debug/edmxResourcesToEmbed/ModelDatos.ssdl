@@ -4,9 +4,9 @@
     <Key>
       <PropertyRef Name="IdProceso" />
     </Key>
-    <Property Name="IdProceso" Type="int" Nullable="false" />
+    <Property Name="IdProceso" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="IdUsuario" Type="int" Nullable="false" />
-    <Property Name="Nombre" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="Nombre" Type="nvarchar(max)" Nullable="false" />
     <Property Name="Procesopadre" Type="int" />
   </EntityType>
   <EntityType Name="Usuario">

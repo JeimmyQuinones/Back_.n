@@ -43,6 +43,8 @@ namespace Datos
                 {
                     model.Nombre = user.Nombre;
                     model.Email = user.Email;
+                    model.Apellidos = user.Apellidos;
+                    model.Numeroidentificacion = user.Numeroidentificacion;
                     db.SaveChanges();
                     return "OK";
                 }

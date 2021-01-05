@@ -6,7 +6,7 @@
     </Key>
     <Property Name="IdProceso" Type="Int32" Nullable="false" />
     <Property Name="IdUsuario" Type="Int32" Nullable="false" />
-    <Property Name="Nombre" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="Procesopadre" Type="Int32" />
     <NavigationProperty Name="Proceso1" Relationship="Self.FK_Proceso_Proceso" FromRole="Proceso" ToRole="Proceso1" />
     <NavigationProperty Name="Proceso2" Relationship="Self.FK_Proceso_Proceso" FromRole="Proceso1" ToRole="Proceso" />
