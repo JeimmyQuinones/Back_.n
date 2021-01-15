@@ -131,6 +131,19 @@ namespace Jeimmy_Quinones.Controllers
 
         }
         [HttpGet]
+        [Route("Api/Proceso")]
+        public IHttpActionResult GetProceso(int id)
+        {
+            Proceso model = ProcesoNegocio.GetProceso(id);
+            var item = new ProcesoViewModel();
+            item.IdProceso = model.IdProceso;
+            item.IdUsuario = model.IdUsuario;
+            item.Nombre = model.Nombre;
+            item.Procesopadre = model.Procesopadre;
+            return Ok(item);
+
+        }
+        [HttpGet]
         [Route("Api/GetAddProceso")]
         public IHttpActionResult GetAddProceso()
         {
@@ -150,22 +163,22 @@ namespace Jeimmy_Quinones.Controllers
         [ResponseType(typeof(UsuaioViewModel))]
         [HttpPost]
         [Route("Api/AddProceso")]
-        public IHttpActionResult AddProceso(string Nombre, int idusuario, int idproceso)
+        public IHttpActionResult AddProceso(ProcesoViewModel model)
         {
-            if (Nombre != null && idusuario != 0 )
+            if ( model!=null)
             {
                 var mol = new Proceso();
                 mol.IdProceso = -1;
-                mol.Nombre = Nombre;
-                mol.IdUsuario = idusuario;
-                if(idproceso==-1)
+                mol.Nombre = model.Nombre;
+                mol.IdUsuario = model.IdUsuario;
+                if(model.Procesopadre==-1)
                 {
                     mol.Procesopadre = null;
                 }
                 else
                 {
 
-                    mol.Procesopadre = idproceso;
+                    mol.Procesopadre = model.Procesopadre;
                 }
                 var resul = ProcesoNegocio.AddProceso(mol);
                 return Ok(resul);
@@ -175,24 +188,24 @@ namespace Jeimmy_Quinones.Controllers
                 return Ok("Error");
             }
         }
-        [HttpPost]
+        [HttpPut]
         [Route("Api/SaveProceso")]
-        public IHttpActionResult SaveProceso(int id,string Nombre, int idusuario, int idproceso)
+        public IHttpActionResult SaveProceso(ProcesoViewModel model)
         {
-            if (Nombre != null && idusuario != 0)
+            if (model != null)
             {
                 var mol = new Proceso();
-                mol.IdProceso = id;
-                mol.Nombre = Nombre;
-                mol.IdUsuario = idusuario;
-                if (idproceso == -1)
+                mol.IdProceso = model.IdProceso;
+                mol.Nombre = model.Nombre;
+                mol.IdUsuario = model.IdUsuario;
+                if (model.Procesopadre == -1)
                 {
                     mol.Procesopadre = null;
                 }
                 else
                 {
 
-                    mol.Procesopadre = idproceso;
+                    mol.Procesopadre = model.Procesopadre;
                 }
                 var resul = ProcesoNegocio.SaveProceso(mol);
                 return Ok(resul);
@@ -202,7 +215,7 @@ namespace Jeimmy_Quinones.Controllers
                 return Ok("Error");
             }
         }
-        [HttpPost]
+        [HttpDelete]
         [Route("Api/DeleteProceso")]
         public IHttpActionResult DeleteProceso(int id)
         {
