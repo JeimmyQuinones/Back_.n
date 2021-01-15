@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
+using System.Web.Http.Cors;
 
 namespace Jeimmy_Quinones
 {
@@ -12,6 +13,9 @@ namespace Jeimmy_Quinones
             // Configuración y servicios de API web
 
             // Rutas de API web
+            var cors = new EnableCorsAttribute("*", "*", "*");
+            config.EnableCors(cors);
+            // intalar Microsoft.AspNet.WebApi.Cors
             config.MapHttpAttributeRoutes();
 
             config.Routes.MapHttpRoute(

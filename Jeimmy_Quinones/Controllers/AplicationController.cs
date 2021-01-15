@@ -9,11 +9,14 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Description;
+using System.Web.Http.Cors;
 
 namespace Jeimmy_Quinones.Controllers
 {
+    
     public class AplicationController : ApiController
     {
+        /////Microsoft.AspNet.WebApi.Cors instalar
         #region Usuarios
         [HttpGet]
         [Route("Api/Usuarios")]
@@ -43,16 +46,16 @@ namespace Jeimmy_Quinones.Controllers
         [ResponseType(typeof(UsuaioViewModel))]
         [HttpPost]
         [Route("Api/AddUsuario")]
-        public IHttpActionResult AddUsuaio(string Nombre, string Apellido, string Email,int Numeroidentificacion)
+        public IHttpActionResult AddUsuaio(UsuaioViewModel Usuario)
         {
-            if (Nombre!=null&&Apellido!=null&&Email!=null&&Numeroidentificacion!=0)
+            if(Usuario!=null)
             {
                 var mol = new Usuario();
                 mol.IdUsuario = -1;
-                mol.Nombre = Nombre;
-                mol.Apellidos = Apellido;
-                mol.Email = Email;
-                mol.Numeroidentificacion = Numeroidentificacion;
+                mol.Nombre = Usuario.Nombre;
+                mol.Apellidos = Usuario.Apellidos;
+                mol.Email = Usuario.Email;
+                mol.Numeroidentificacion = Usuario.Numeroidentificacion;
                 var resul = UsuarioNegocio.AddUsuario(mol);
                 return Ok(resul);
             }
@@ -60,19 +63,20 @@ namespace Jeimmy_Quinones.Controllers
             {
                 return Ok("Error");
             }
+
         }
-        [HttpPost]
+        [HttpPut]
         [Route("Api/SaveUsuario")]
-        public IHttpActionResult SaveUsuaio(int ID,string Nombre, string Apellido, string Email, int Numeroidentificacion)
+        public IHttpActionResult SaveUsuaio(UsuaioViewModel Usuario)
         {
-            if (Nombre != null && Apellido != null && Email != null && Numeroidentificacion != 0)
+            if (Usuario!=null)
             {
                 var mol = new Usuario();
-                mol.IdUsuario =ID;
-                mol.Nombre = Nombre;
-                mol.Apellidos = Apellido;
-                mol.Email = Email;
-                mol.Numeroidentificacion = Numeroidentificacion;
+                mol.IdUsuario = Usuario.IdUsuario;
+                mol.Nombre = Usuario.Nombre;
+                mol.Apellidos = Usuario.Apellidos;
+                mol.Email = Usuario.Email;
+                mol.Numeroidentificacion = Usuario.Numeroidentificacion;
                 var resul = UsuarioNegocio.SaveUsuario(mol);
                 return Ok(resul);
             }
@@ -81,7 +85,7 @@ namespace Jeimmy_Quinones.Controllers
                 return Ok("Error");
             }
         }
-        [HttpPost]
+        [HttpDelete]
         [Route("Api/DeleteUsuario")]
         public IHttpActionResult DeleteUsuaio(int id)
         {
