@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Jeimmy_Quinones.Controllers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
@@ -10,6 +11,9 @@ namespace Jeimmy_Quinones
     {
         public static void Register(HttpConfiguration config)
         {
+            /// login tokens
+            config.MessageHandlers.Add(new TokenValidationHandler());
+
             // Configuración y servicios de API web
 
             // Rutas de API web

@@ -109,3 +109,11 @@ C:\Users\Jeimmy\Desktop\PruebaTecnica_Jeimmy_Quiñones\Jeimmy_Quinones\Jeimmy_Qu
 C:\Users\Jeimmy\Desktop\PruebaTecnica_Jeimmy_Quiñones\Jeimmy_Quinones\Jeimmy_Quinones\bin\System.Web.Cors.dll
 C:\Users\Jeimmy\Desktop\PruebaTecnica_Jeimmy_Quiñones\Jeimmy_Quinones\Jeimmy_Quinones\bin\System.Web.Http.Cors.dll
 C:\Users\Jeimmy\Desktop\PruebaTecnica_Jeimmy_Quiñones\Jeimmy_Quinones\Jeimmy_Quinones\bin\System.Web.Http.Cors.xml
+C:\Users\Jeimmy\Desktop\PruebaTecnica_Jeimmy_Quiñones\Jeimmy_Quinones\Jeimmy_Quinones\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Jeimmy\Desktop\PruebaTecnica_Jeimmy_Quiñones\Jeimmy_Quinones\Jeimmy_Quinones\bin\Microsoft.IdentityModel.Logging.dll
+C:\Users\Jeimmy\Desktop\PruebaTecnica_Jeimmy_Quiñones\Jeimmy_Quinones\Jeimmy_Quinones\bin\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Jeimmy\Desktop\PruebaTecnica_Jeimmy_Quiñones\Jeimmy_Quinones\Jeimmy_Quinones\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Jeimmy\Desktop\PruebaTecnica_Jeimmy_Quiñones\Jeimmy_Quinones\Jeimmy_Quinones\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+C:\Users\Jeimmy\Desktop\PruebaTecnica_Jeimmy_Quiñones\Jeimmy_Quinones\Jeimmy_Quinones\bin\Microsoft.IdentityModel.Logging.xml
+C:\Users\Jeimmy\Desktop\PruebaTecnica_Jeimmy_Quiñones\Jeimmy_Quinones\Jeimmy_Quinones\bin\Microsoft.IdentityModel.Tokens.xml
+C:\Users\Jeimmy\Desktop\PruebaTecnica_Jeimmy_Quiñones\Jeimmy_Quinones\Jeimmy_Quinones\bin\System.IdentityModel.Tokens.Jwt.xml

@@ -16,6 +16,7 @@ namespace Jeimmy_Quinones.Controllers
     
     public class AplicationController : ApiController
     {
+        [Authorize]
         /////Microsoft.AspNet.WebApi.Cors instalar
         #region Usuarios
         [HttpGet]
